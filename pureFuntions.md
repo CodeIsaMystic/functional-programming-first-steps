@@ -12,6 +12,9 @@ Decide whether each of the following functions is pure or impure, and why. Use t
 
 
 
+
+#### getDate 
+
 ```javascript
 getDate = ƒ()
 
@@ -27,6 +30,7 @@ A function is not pure if its output depends on anything except its inputs (incl
 
 
 
+#### getWorkshopDate
 
 ```javascript
 getWorkshopDate = ƒ()
@@ -43,7 +47,8 @@ A function is pure if its output depends on nothing but its inputs, and it alway
 
 
 
-
+#### toHex
+ 
 ```javascript
 toHex = ƒ(n)
 
@@ -60,7 +65,8 @@ A function is pure if its output depends on nothing but its inputs, it does noth
 
 
 
-
+#### rgbToHex
+ 
 ```javascript
 rgbToHex = ƒ(R, G, B)
 
@@ -76,7 +82,8 @@ A function is pure if its output depends on nothing but its inputs, it does noth
 
 
 
-
+#### setColor
+ 
 ```javascript
 setColor = ƒ(R, G, B)
 
@@ -95,7 +102,8 @@ A function is not pure if it does anything besides return its output. Any other 
 
 
 
-
+#### readJsonFile
+ 
 ```javascript
 readJsonFile = async ƒ(filename)
 
@@ -114,7 +122,8 @@ A function is not pure if its output depends on the state of the world (in this 
 
 
 
-
+#### writeJsonString
+ 
 ```javascript
 writeJsonString = ƒ(object)
 
@@ -131,7 +140,8 @@ A function is pure if its output depends on nothing but its inputs, and it alway
 
 
 
-
+#### exclusiveOr
+ 
 ```javascript
 exclusiveOr = ƒ(A, B)
 
@@ -147,7 +157,8 @@ A function is pure if its output depends on nothing but its inputs, it does noth
 
 
 
-
+#### computeTruthTable
+ 
 ```javascript
 computeTruthTable = ƒ(operator)
 
@@ -170,7 +181,8 @@ A function is pure if its output depends on nothing but its inputs, it does noth
 
 
 
-
+#### showTruthTable
+ 
 ```javascript
 showTruthTable = ƒ(operator)
 
