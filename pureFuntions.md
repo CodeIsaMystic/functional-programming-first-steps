@@ -52,7 +52,6 @@ function toHex(n) {
   return hex.padStart(2, '0');
 }
 ```
-
 🙌 toHex is Pure
 
 Explanation
@@ -69,12 +68,10 @@ function rgbToHex(R, G, B) {
   return '#' + [toHex(R), toHex(G), toHex(B)].join('');
 }
 ```
-
-🤔 rgbToHex is Pure
+🙌 rgbToHex is Pure
 
 Explanation
 A function is pure if its output depends on nothing but its inputs, it does nothing except return its output, and it always returns the same output if called with the same input.
-
 
 
 
@@ -89,6 +86,7 @@ function setColor(R, G, B) {
   colorMe.setAttribute('style', 'color: ' + hex);
 }
 ```
+🙌 setColor is Not Pure
 
 Explanation
 A function is not pure if it does anything besides return its output. Any other effect it has on the program or world is a side effect (in this case, changing the properties of an HTML element on the page).
@@ -108,8 +106,7 @@ async function readJsonFile(filename) {
   return await file.json();
 }
 ```
-
-🙌 readJsonFile is Not Pure
+🤔 readJsonFile is Not Pure
 
 Explanation
 A function is not pure if its output depends on the state of the world (in this case, the contents of web-hosted file), or if calling the function at different times with the same inputs can give different outputs.
@@ -125,7 +122,7 @@ function writeJsonString(object) {
   return JSON.stringify(object, null, 2);
 }
 ```
-🙌 writeJsonString is Pure
+🤔 writeJsonString is Pure
 
 Explanation
 A function is pure if its output depends on nothing but its inputs, and it always returns the same output if called with the same input. In this case, calling it on the same object will always return the same string.
@@ -166,7 +163,7 @@ function computeTruthTable(operator) {
   return table;
 }
 ```
-🙌 computeTruthTable is Pure
+🤔 computeTruthTable is Pure
 
 Explanation
 A function is pure if its output depends on nothing but its inputs, it does nothing except return its output, and it always returns the same output if called with the same input.
