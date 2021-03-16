@@ -64,9 +64,9 @@ odds = filter(n => {
 
 greaterThanFour = filter(n => n > 4, wholes)
 ```
-🎉 evens ☝️ should be [0,2,4,6,8,10]
-🎉 odds  ☝️ should be [1,3,5,7,9]
-🎉 greaterThanFour ☝️ should be [5,6,7,8,9,10]
+🎉 evens ☝️ should be [0,2,4,6,8,10] </br>
+🎉 odds  ☝️ should be [1,3,5,7,9] </br>
+🎉 greaterThanFour ☝️ should be [5,6,7,8,9,10] </br>
 
 </br>
 
@@ -236,11 +236,8 @@ function tail(array) {
 ```
  </br>
 
-#### Exercise helpers
-The functions below help give you feedback on the exercises above!
 
-</br>
-
+##### **The functions below help give you feedback!**
 ```javascript
 compareArrays = ƒ(actual, expected)
 
