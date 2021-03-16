@@ -196,46 +196,43 @@ fizzBuzz = map(n => {
 
 
 #### Helper functions 
-</br>
-
-**concat = ƒ(array1, array2)**
 ```javascript
-
 // Concatenate two arrays into a new single array
+concat = ƒ(array1, array2)
+
 function concat(array1, array2) {
   return array1.concat(array2);
 }
 ```
 
-
-**length = ƒ(array)**
 ```javascript
 // Return the number of items in an array
+length = ƒ(array)
+
 function length(array) {
   return array.length;
 }
 ```
 
-
-**head = ƒ(array)**
 ```javascript
 // Return the first item in an array
+head = ƒ(array)
+
 function head(array) {
   return array[0];
 }
 ```
 
 
-
-**tail = ƒ(array)**
 ```javascript
 // Return the rest of an array after the first item
+tail = ƒ(array)
+
 function tail(array) {
   return array.slice(1);
 }
 ```
  </br>
-
 
 ##### **The functions below help give you feedback!**
 ```javascript
