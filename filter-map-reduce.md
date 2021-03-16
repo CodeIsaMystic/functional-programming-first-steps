@@ -113,6 +113,7 @@ Hint: remember that recursion is a functional programmer's best friend!
 ```javascript
 // *********************************
 doubled = Array(11) [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+halved = Array(11) [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5]
 
 // *********************************
 //  map = ƒ(fn, array)  
@@ -124,7 +125,10 @@ function map(fn, array) {
 
 // ********************************
 doubled = map(n => n * 2, wholes)
+
+halved = map(n => n / 2, wholes)
 ```
+🎉 doubled ☝️ should be [0,2,4,6,8,10,12,14,16,18,20] </br>
 🎉 halved ☝️ should be [0,0.5,1,1.5,2,2.5,3,3.5,4,4.5,5]
 
 </br>
