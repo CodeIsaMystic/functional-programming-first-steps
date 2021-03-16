@@ -26,8 +26,7 @@ The \`filter\` function takes a "predicate" function (a function that takes in a
 The \`filter\` function has been implemented for you below:
 
 ```javascript
-filter = ƒ(predicateFn, array)
-
+/*  filter = ƒ(predicateFn, array)  */
 function filter(predicateFn, array) {
   if (length(array) === 0) return [];
   const firstItem = head(array);
@@ -50,7 +49,7 @@ greaterThanFour = Array(6) [5, 6, 7, 8, 9, 10]
 
 
 // ***************************
-isEven = ƒ(n)
+/*  isEven = ƒ(n)  */
 
 function isEven(n) {
   return n % 2 === 0;
@@ -71,7 +70,7 @@ greaterThanFour = filter(n => n > 4, wholes)
 </br>
 
 ```javascript
-isPrime = ƒ(n)
+/*  isPrime = ƒ(n)  */
 
 function isPrime(n) {
   if (n <= 1) return false;
@@ -116,7 +115,7 @@ Hint: remember that recursion is a functional programmer's best friend!
 doubled = Array(11) [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 // *********************************
-map = ƒ(fn, array)
+/*  map = ƒ(fn, array)  */
 
 function map(fn, array) {
   if (length(array) === 0) return [];
@@ -214,27 +213,25 @@ max = reduce(
 
 #### Helper functions 
 ```javascript
-// Concatenate two arrays into a new single array
-concat = ƒ(array1, array2)
-
+/* Concatenate two arrays into a new single array
+      concat = ƒ(array1, array2)
+*/
 function concat(array1, array2) {
   return array1.concat(array2);
 }
-```
 
-```javascript
-// Return the number of items in an array
-length = ƒ(array)
 
+/* Return the number of items in an array
+      length = ƒ(array)
+*/
 function length(array) {
   return array.length;
 }
-```
 
-```javascript
-// Return the first item in an array
-head = ƒ(array)
 
+/* Return the first item in an array
+      head = ƒ(array)
+*/
 function head(array) {
   return array[0];
 }
@@ -242,9 +239,9 @@ function head(array) {
 
 
 ```javascript
-// Return the rest of an array after the first item
-tail = ƒ(array)
-
+/* Return the rest of an array after the first item
+      tail = ƒ(array)
+*/
 function tail(array) {
   return array.slice(1);
 }
