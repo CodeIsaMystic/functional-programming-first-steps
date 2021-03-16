@@ -151,49 +151,66 @@ fizzBuzz = map(n => {
 ```
 🎉 fizzBuzz ☝️ should be [fizzbuzz,1,2,fizz,4,buzz,fizz,7,8,fizz,buzz]
 
+</br>
 
+### 3. Reduce
+
+The \`reduce\` function is the odd one of the bunch. Unlike \`filter\` and \`map\`, which each take an array and return another array, \`reduce\` takes in an array and returns a single value - in other words, it "reduces" an array to a single value. 
+
+\`reduce\` takes three arguments:
+- a "reducer" function, which takes two arguments - an accumulator and the next value from the array - and returns a single value. This function will be applied to each value in the array, with the accumulator storing the reduced value so far.
+- an initial value, passed to the first call of the reducer function
+- the array to reduce
+
+Take a moment to read the recursive implementation of \`reduce\` below: 
 
 
 
 ```javascript
+/* reduce = ƒ(reducerFn, initialValue, array) */
+
+function reduce(reducerFn, initialValue, array) {
+  if (length(array) === 0) return initialValue;
+  const newInitialValue = reducerFn(initialValue, head(array));
+  return reduce(reducerFn, newInitialValue, tail(array));
+}
 
 ```
 
+</br> 
+
+In the cells that follow, **fill in the TODOs** to implement reducer functions that produce the expected values.
 
 
+```javascript
+// **********************************
+sum = 55
+max = 10
+
+// *********************************
+sum = reduce(
+  (accumulator, value) => {
+    return accumulator + value;
+  },
+  0,
+  wholes
+)
 
 
+max = reduce(
+  (acc, val) => {
+    return val > acc ? val : acc;
+  },
+  0,
+  [7, 1, 3, 5, 6, 2, 8, 10, 0, 4, 9]
+)
+```
+🎉 sum ☝️ should be 55 </br>
+🎉 max ☝️ should be 10 </br>
 
+-----
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Appendix: Helper Functions
 
 #### Helper functions 
 ```javascript
