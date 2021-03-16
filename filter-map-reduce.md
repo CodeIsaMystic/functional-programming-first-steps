@@ -49,7 +49,7 @@ greaterThanFour = Array(6) [5, 6, 7, 8, 9, 10]
 
 
 // ***************************
-/*  isEven = ƒ(n)  */
+//  isEven = ƒ(n)  
 
 function isEven(n) {
   return n % 2 === 0;
@@ -194,7 +194,6 @@ sum = reduce(
   0,
   wholes
 )
-
 
 max = reduce(
   (acc, val) => {
