@@ -138,13 +138,13 @@ Do very big numbers create a problem for either version?
 </br>
 
 
-With big numbers, the recursion do not assume the calculation for reasons...
+##With big numbers, the recursion do not assume the calculation for reasons...##
 
 
 </br>
 
 
-There are two call recursion in the recursiveFibonacci function, doing the same work multiple times for each calculation...
+There are ##two call recursion## in the recursiveFibonacci function, doing ##the same work multiple times for each calculation...##
 
 It need here maybe to use the principal of memoization to cache the result and do not repeat the calculation
 
@@ -152,7 +152,7 @@ It need here maybe to use the principal of memoization to cache the result and d
 </br>
 
 
-Then, there are too much functions calls on the call stack, open up each time some new execution context. The browser do not assume that in term of memory maybe or performance...
+Then, there are ##too much functions calls on the call stack##, open up each time some new execution context. The browser do not assume that in term of memory maybe or performance...
 
 It need to read more about "Tail Call Optimization" and "Tail Recursive Function"...
 
