@@ -115,7 +115,7 @@ Hint: remember that recursion is a functional programmer's best friend!
 doubled = Array(11) [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 // *********************************
-/*  map = ƒ(fn, array)  */
+//  map = ƒ(fn, array)  
 
 function map(fn, array) {
   if (length(array) === 0) return [];
@@ -214,24 +214,23 @@ max = reduce(
 #### Helper functions 
 ```javascript
 /* Concatenate two arrays into a new single array
-      concat = ƒ(array1, array2)
-*/
+      concat = ƒ(array1, array2)  */
 function concat(array1, array2) {
   return array1.concat(array2);
 }
+```
 
-
+```javascript
 /* Return the number of items in an array
-      length = ƒ(array)
-*/
+      length = ƒ(array)  */
 function length(array) {
   return array.length;
 }
+```
 
-
+```javascript
 /* Return the first item in an array
-      head = ƒ(array)
-*/
+      head = ƒ(array)  */
 function head(array) {
   return array[0];
 }
