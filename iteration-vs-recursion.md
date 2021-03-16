@@ -90,7 +90,6 @@ function iterativeFibonacci(n) {
     current = next;
   }
   return current;
-```
 🎉 iterativeFibonacci(2) should return 1
 
 🎉 iterativeFibonacci(6) should return 8
@@ -98,11 +97,10 @@ function iterativeFibonacci(n) {
 🎉 iterativeFibonacci(10) should return 55
 
 🎉 iterativeFibonacci(20) should return 6765
-
+```
 
   
 </br>
-
 
 
 ```javascript
@@ -127,9 +125,7 @@ function recursiveFibonacci(n) {
 
 
 
-
-
-
+</br>
 
 
 ## Comparing performance
@@ -138,9 +134,14 @@ Using the number widget below to set the value of \`n\`, try calling your comple
 
 Do very big numbers create a problem for either version?
 
+
+</br>
+
+
 With big numbers, the recursion do not assume the calculation for reasons...
 
 
+</br>
 
 
 There are two call recursion in the recursiveFibonacci function, doing the same work multiple times for each calculation...
