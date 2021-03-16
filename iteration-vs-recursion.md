@@ -1,4 +1,4 @@
-# Exercise: Iteration vs. Recursion
+# Iteration vs. Recursion
 
 In functional programming, we avoid mutable state, and therefore avoid iterative loops using \`for\` or \`while\`. As an alternative to iteration, we use _recursion_ to break down the problem into smaller ones.
 
@@ -6,6 +6,8 @@ A recursive function has two parts:
 - **Base case**: condition(s) under which the function returns an output without making a recursive call  
 - **Recursive case**: condition(s) under which the function calls itself to return the output
 
+
+</br>
 
 
 
@@ -34,6 +36,12 @@ iterativeFactorial(3) // Try changing the input to test out the function
 ```
 
 
+
+</br>
+
+
+
+
 ```javascript
 recursiveFactorial = ƒ(n)
 
@@ -45,7 +53,7 @@ function recursiveFactorial(n) {
 recursiveFactorial(3) // Try changing the input to test out the function
 ```
 
-
+</br>
 
 
 
@@ -61,6 +69,10 @@ In the cells below, fill in the code to implement iterative and recursive versio
 Each Fibonacci number is defined as the sum of the previous two Fibonacci numbers, so \`fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)\`. By convention, the first two numbers are fixed: \`fibonacci(0) = 0\` and \`fibonacci(1) = 1\`.
 
 When each function has been implemented successfully, you'll see the tests below each function pass.
+
+
+</br>
+ 
 
 
 ```javascript
@@ -89,6 +101,9 @@ function iterativeFibonacci(n) {
 
 
   
+</br>
+
+
 
 ```javascript
 iterativeFibonacci = ƒ(n)
@@ -132,6 +147,8 @@ There are two call recursion in the recursiveFibonacci function, doing the same 
 
 It need here maybe to use the principal of memoization to cache the result and do not repeat the calculation
 
+
+</br>
 
 
 Then, there are too much functions calls on the call stack, open up each time some new execution context. The browser do not assume that in term of memory maybe or performance...
