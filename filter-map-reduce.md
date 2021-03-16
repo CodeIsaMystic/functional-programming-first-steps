@@ -227,8 +227,8 @@ function head(array) {
 
 
 
+**tail = ƒ(array)**
 ```javascript
-// **tail = ƒ(array)**
 // Return the rest of an array after the first item
 function tail(array) {
   return array.slice(1);
